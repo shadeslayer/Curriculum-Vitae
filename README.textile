@@ -1,6 +1,6 @@
 <p>Hi there!<br />
 This is my resume, please use kile or something similar to generate the PDF/PS file</p>
-        <p>Copyright&#169; 2011 by Rohan Garg <rohan16garg@gmail.com></p>
+        <p>Copyright &#169; 2011 by Rohan Garg <rohan16garg@gmail.com></p>
 
 	<p>Permission is hereby granted, free of charge, to any person obtaining a copy<br />
 of this software and associated documentation files (the &#8220;Software&#8221;), to deal<br />
