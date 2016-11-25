@@ -13,6 +13,8 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{hyperref}
+
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
@@ -24,9 +26,9 @@
 \firstname{Rohan}
 \familyname{Garg}
 \title{Resumé}
-\address{303-P, Sector-14}{Gurgaon, India, 122001}    % optional, remove the line if not wanted
-\mobile{+91-9953129014}                    % optional, remove the line if not wanted
-\email{rohan16garg@gmail.com} % optional, remove the line if not wanted
+\address{Barcelona, Spain}{}    % optional, remove the line if not wanted
+\mobile{+34-625112103}                    % optional, remove the line if not wanted
+\email{rohan@garg.io} % optional, remove the line if not wanted
 
 %----------------------------------------------------------------------------------
 %            content
@@ -35,23 +37,21 @@
 \maketitle
 
 \section{Education}
-\cventry {2008--Current}{Bachelor of Technology}{Maharshi Dayanand University}{Gurgaon}{Electronics and Communication}{}
-\cventry {2007--2008}{C.B.S.E. Senior Secondary}{D.A.V. Public School}{Gurgaon}{}{}
+\cventry {2008--2012}{Bachelor of Technology}{Maharshi Dayanand University}{Gurgaon}{Electronics and Communication}{}
+\cventry {2006--2008}{C.B.S.E. Senior Secondary}{D.A.V. Public School}{Gurgaon}{}{}
 \cventry {2005--2006}{C.B.S.E. Secondary}{D.A.V. Public School}{Gurgaon}{}{}
 
 \section{Technical Skills}
 \cvcomputer
-{\textbf{Operating Systems}}{Linux, Windows}
+{\textbf{Languages}}{Ruby, C, C++, Python, \& Bash}
 {}{}
 \cvcomputer
-{\textbf{Programming Languages}}{C, C++, Python, Basic Javascript \& Shell scripting}
-{\textbf{Markup Languages}}{Basic XML}
+{\textbf{Frameworks}}{Chef, Docker, AWS, Amazon S3, Aptly, KDE, Qt}
+{}{}
+
 \cvcomputer
-{\textbf{Frameworks}}{KDE, Qt, QtQuick, SyncEvolution, Telepathy}
-{\textbf{Development Tools}}{CMake, qmake, emacs, gdb, git, cvs/svn, bzr, zsh, bash, KDevelop, QtCreator, Kile}
-\cvcomputer
-{\textbf{Software Packages}}{qdbus/mdbus/gdbus, ssh, pbuilder, inkscape, docbook, \LaTeX{}}
-{\textbf{Certifications}}{Successfully completed Ericsson's EXCEL certification Program}
+{\textbf{CI}}{Jenkins}
+{}{}
 
 
 % --------------------------------------
@@ -59,28 +59,20 @@
 % --------------------------------------
 
 \section{Work Experience and Positions}
-\cventry{October 2011 -- Current}{libnice}{Intern}{Collabora}{}{libnice is an implementation of the IETF's Interactive Connectivity Establishment (ICE) standard (RFC 5245) and the Session Traversal Utilities for NAT (STUN) standard (RFC 5389). Working on implementing dribble mode in libnice which allows for faster NAT Traversal}
+\cventry{August 2012 -- Current}{Debian, Ubuntu}{Backend \& Automation Engineer}{Blue Systems}{}{The bulk of my work at Blue Systems consists of backend engineering and automation. I have been tasked with writing new features for and maintaining a CI instance that builds Debian packages for KDE. During the course of my employment, I have built and successfully shipped multiple products, the most notable being KDE Neon and the Netrunner family of distributions.}{}
+\cventry{October 2011 -- August 2012}{libnice}{Intern}{Collabora}{}{libnice is an implementation of the IETF's Interactive Connectivity Establishment (ICE) standard (RFC 5245) and the Session Traversal Utilities for NAT (STUN) standard (RFC 5389). Working on implementing dribble mode in libnice which allows for faster NAT Traversal}
 \cventry{May 2011 -- August 2011}{Google Summer of Code 2011}{Student Contractor}{Google}{}{Google Summer of Code is a global program that offers student developers stipends to write code for various open source software projects. It is a highly competitive summer job, where students are required to contribute real world open source projects. Their contributions are released under the open source licenses so that they may benefit everyone. I developed a GUI frontend for SyncEvolution using the KDE and Qt Frameworks}
 
 \subsection{F/OSS Contributions}
-\cventry{April 2011 -- Current}{Telepathy KDE}{Community Developer}{KDE}{Bug fixes, Ux improvements}{Real time Communication has traditionally been a detached feature of Desktop Computing, provided via stand-alone Instant Messaging clients with poor integration into the desktop experience. One of the primary goals of the KDE 4 series is to tighten integration between different components of the environment. The Realtime Communication and Collaboration (RTCC) project aims to tackle just this.}
-
-\cventry{September 2010 -- Current}{Project Neon}{Maintainer}{Kubuntu}{Revived Project Neon for Kubuntu along with 2 other developers making use of Launchpad's new feature for daily builds}{Project Neon is a nightly build of the latest KDE trunk. It is an easy way for new contributors to KDE to get started without having to build the entire KDE-SVN tree and maintain the checkout. Additionally, dependencies are automatically handled and updated. This is suitable for new developers, translators, usability designers, documenters, promoters, bug triagers etc}%\href{https://launchpad.net/~neon}{\textit{Project Neon at Launchpad}}}
-\cventry{July 2010 -- April 2011}{rekonq}{Community Developer}{KDE}{Adding support for multiple protocols, Bug triaging, Initial docbook}{rekonq is a web browser based on WebKit and the KDE technologies.Its aim is to integrate nicely in the KDE desktop while providing a lightweight experience.}%\href{https://projects.kde.org/rekonq}{\textit{rekonq Project Page}}}
-\cventry{August 2008 -- Current}{Kubuntu}{Community Developer}{}{KDE Packaging, fixing build failiures, licensing, \& bugs}{Kubuntu is an operating system built by a worldwide team of expert developers. It contains all the applications you need: a web browser, an office suite, media apps, an instant messaging client and many more.}%\href{https://launchpad.net/~rohangarg}{\textit{My Launchpad page}}}
-
-%\section{Events Organized}
-% Insert college stuff over here after looking at certificates
-%\cventry{March 2010}{Reverse Gears}{Co Ordinator}{}{Organized `Reverse Gears' during Cerebration}{Cerebration is the college's annual technical fest}
-%\cventry{March 2010}{Blagwars}{Co Ordinator}{}{Organized `Blagwars' during Cerebration}{Cerebration is the college's annual technical fest}
-%\cventry{March 2010}{The Ultimate Oddysee}{Co Ordinator}{}{Organized `The Ultimate Oddysee' during Cerebration}{Cerebration is the college's annual technical fest}
-%\cventry{March 2010}{Don't tell me why}{Co Ordinator}{}{Organized `Don't tell me why' during Cerebration}{Cerebration is the college's annual technical fest}
-%\cventry{March 2009}{Linux install fest}{Co Ordinator}{}{Successfully organized and ran a Linux install fest during Cerebration}{Cerebration is the college's annual technical fest}
-
-\section{Publications}
-\cventry{July 2010 -- September 2011}{Livewire}{Student Editor}{}{Livewire is the departmental magazing for the ECE branch in ITM}{Published multiple articles in 2 editions of the magazine, including (but not limited to) articles on Cloud Computing and the Third Generation(3G) of mobile networks}
+\cventry{March 2016 -- Current}{\href{https://github.com/KDEJewellers/aptly-api/}{aptly-api}}{Co-Maintainer}{Ruby Gem}{\href{https://github.com/KDEJewellers/aptly-api}{Github}}{Aptly is a Debian repository management tool written in Go. aptly-api provides a thin wrapper to interact with Aptly API}
+\cventry{March 2015 -- January 2016}{ARM Image Generator}{Author}{Tool to generate images for ARM devices}{\href{https://github.com/netrunner-odroid/arm-image-generator}{Github}}{ARM Image generator aimed to replace Linaro's HWPacks due to it's various limitations and allowed for a very descriptive way of building ARM images for practically any ARM board. Nearly all the functionality of ARM Image generator has now been merged into the live-build tool from Debian}
+\cventry{December 2013 -- Current}{Driver Manager KCM}{Author}{App to install proprietary drivers}{\href{https://cgit.kde.org/scratch/garg/kcm-driver-manager.git/}{KDE}}{Driver Manager is a KDE tool that figures out which proprietary drivers are best for your system and allows you to install the one you prefer.}
+\cventry{April 2011 -- August 2012}{Telepathy KDE}{Community Developer}{KDE}{Bug fixes, Ux improvements}{Real time Communication has traditionally been a detached feature of Desktop Computing, provided via stand-alone Instant Messaging clients with poor integration into the desktop experience. One of the primary goals of the KDE 4 series is to tighten integration between different components of the environment. The Realtime Communication and Collaboration (RTCC) project aims to tackle just this.}
+\cventry{September 2010 -- January 2012}{Project Neon}{Maintainer}{Kubuntu}{Revived Project Neon for Kubuntu along with 2 other developers making use of Launchpad's new feature for daily builds}{Project Neon is a nightly build of the latest KDE trunk. It is an easy way for new contributors to KDE to get started without having to build the entire KDE-SVN tree and maintain the checkout. Additionally, dependencies are automatically handled and updated. This is suitable for new developers, translators, usability designers, documenters, promoters, bug triagers etc}%\href{https://launchpad.net/~neon}{\textit{Project Neon at Launchpad}}}
+\cventry{August 2008 -- July 2015}{Kubuntu}{Community Developer}{}{KDE Packaging, fixing build failiures, licensing, \& bugs}{Kubuntu is an operating system built by a worldwide team of expert developers. It contains all the applications you need: a web browser, an office suite, media apps, an instant messaging client and many more.}%\href{https://launchpad.net/~rohangarg}{\textit{My Launchpad page}}}
 
 \section{Talks and Travels}
+\cventry{July 2015}{Akademy 2016}{Brno, Czech Republic}{}{}{Continuous Debian Package Delivery -- A peek into tooling and QA measures to provide KDE packages from git using Jenkins.}
 \cventry{October 2011}{Google Summer of Code Documentation Sprint}{Googleplex, California}{}{}{Authored a book that guides the reader through the steps of contributing code back to KDE}
 \cventry{August 2011}{The Desktop Summit}{Berlin}{}{}{}
 \cventry{March 2011}{Project Neon - Make your PC dazzle with neon lights}{conf.kde.in, Bangalore}{}{}{How to use Project Neon to develop KDE/Qt applications}
@@ -90,15 +82,8 @@
 % STUFF 
 %---------------------------------------
 
-\section{Interests and Hobbies}
-% \cvline{Books}{\small Description}
-\cvlistitem{\small Deploying Linux based operating systems on x86/x86\_64/ARM based devices}
-\cvlistitem{\small Deploying PIM sync solutions on multiple devices}
-\cvlistitem{\small Developing Telepathy-Qt based Instant Messaging solutions}
-\cvlistitem{\small An avid reader on technology, fiction and non-fiction books and websites, some of my favorite authors being John Grisham \& Christopher Paolini}
-
 \section{Languages}
 \cvlanguage{Hindi}{Native}{}
 \cvlanguage{English}{Fluent}{}
-
+\cvlanguage{Spanish}{A1 Level}{}
 \end{document}
